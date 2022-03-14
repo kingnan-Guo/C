@@ -23,6 +23,7 @@ struct skill
 {
     /* data */
     char a;
+    float num;
     struct extra wtf;
 };
 
@@ -41,8 +42,15 @@ int main()
     struct monster yy;
     yy.hp = 2188521;
     yy.sdk = 218;
+    yy.skl.a = 'vvs';
+    yy.skl.num = 282828;
+    yy.skl.wtf.nothing = 0;
 
-    printf("%x \n", &yy.hp);
-    printf("%x \n", &yy.sdk);
+
+    printf("&yy.hp = %x  double \n", &yy.hp);
+    printf("&yy.sdk = %x   int \n", &yy.sdk);
+    printf("&yy.skl.a = %x   char \n", &yy.skl.a);
+    printf("&yy.skl.num = %x   char \n", &yy.skl.num);
+    printf("&yy.skl.wtf.nothing = %x   int \n", &yy.skl.wtf.nothing);
     return 0;
 }
