@@ -48,6 +48,8 @@ int main()
 
 
     printf("&yy.hp = %x  double \n", &yy.hp);
+
+    printf("yy.hp = %x  double \n", yy.hp);
     printf("&yy.sdk = %x   int \n", &yy.sdk);
     printf("&yy.skl.a = %x   char \n", &yy.skl.a);
     printf("&yy.skl.num = %x   char \n", &yy.skl.num);
