@@ -64,11 +64,15 @@ int main(void)
     /* 最初的内存分配 */
     // C 库函数 void *malloc(size_t size) 分配所需的内存空间，并返回一个指向它的指针。
     // (struct Node *) 将返回的指针至为 Node 的类型
+    // *header 为当前 通过malloc  创建出来的内存空间返回的指针
+    // header 为当前 新创建内存空间的 值
 
     struct Node *  header = (struct Node *) malloc(sizeof(struct Node));
     // strcpy(str->value, 2);
     // printf("String = %s,  Address = %u \n", header, header);
-    struct Node *  flag = header; //将
+
+    //将header （值） 作为 value 传给 *flag ，那么flag->next存储的就是 h
+    struct Node *  flag = header; 
     // printf("flag == %x \n", flag);
     scanf("%d", &flag -> value);
     // printf("flag == %x \n", flag->value);
