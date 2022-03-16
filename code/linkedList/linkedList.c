@@ -92,7 +92,6 @@ int main(void)
     {
         printf("flag->value == %d \n", flag->value);
         flag= flag->next;
-        /* code */
     }
     
     
@@ -110,10 +109,6 @@ int main(void)
     //    printf("String = %s,  Address = %u\n", str, str);
     //    free(str);
     //    return(0);
- 
-
-
-
 
 
     return 0;
