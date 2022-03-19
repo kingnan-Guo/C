@@ -93,7 +93,7 @@ int main(void)
     flag=header;
     // printf('%s============');
     printf(" \n");
-    // 开始循环输出标志位
+    // 开始循环输出标志位，每次向后移动一个 位置，直到 next == NULL
     while (flag != NULL)
     {
         printf("flag->value == %d \n", flag->value);
